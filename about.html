@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+        <title>A& Store| Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo-icons/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productes.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Account</a></li>  
+                    </ul>
+                </nav>
+                <img src="images/logo-icons/cart.png" width="30px " height="30px">
+                <img src="images/logo-icons/menu.png" class="menu-icon" onclick="menutoggle()" >
+            </div>
+           </div>
+</div>
+
+   
+               
+    <!--Offer-->
+    <div class="offer" id="about">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/homeimage/category-1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <h1> About A& Store Group</h1>
+                    <small>We are a family of brands, driven by our desire to make great design available to everyone in a sustainable way. <br>
+                        Together we offer fashion, design and services, that enable people to be inspired and to express their<br>
+                         own personal style, making it easier to live in a more circular way.<br>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Donload Our App</h3>
+                    <p>Download App for Android and IOS mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/logo-icons/play-store.png">
+                        <img src="images/logo-icons/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-icons/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure .
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - A& Store </p>
+        </div>
+    </div>
+    <!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+    </body>
+</html>
